@@ -31,4 +31,10 @@ describe('Person', function() {
     expect(person2.venus_age()).toEqual(6979);
     expect(person3.venus_age()).toEqual(1532);
   })
+
+  it('should test the mars_age() method', function() {
+    expect(person1.mars_age()).toEqual(18928);
+    expect(person2.mars_age()).toEqual(21163);
+    expect(person3.mars_age()).toEqual(4645);
+  })
 });
