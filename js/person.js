@@ -39,4 +39,9 @@ export class Person {
       this.life_expectancy += 2;
     }
   }
+
+  mercury_age() {
+    let years = this.age_in_seconds / 60 / 60 / 24 * 0.24;
+    return Math.round(years);
+  }
 }

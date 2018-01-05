@@ -9,7 +9,7 @@ describe('Person', function() {
     person1 = new Person("Kevin", "6-2-1990", "1-5-2018", "male", "white");
     person2 = new Person("Brian", "2-28-1987", "1-5-2018", "male", "latino");
     person3 = new Person("Wendy", "3-24-2011", "1-5-2018", "female", "asian_american");
-  })
+  });
 
   it('should create person object with correct age_in_seconds and life_expectancy', function() {
     expect(person1.age_in_seconds).toEqual(869875200);
@@ -18,5 +18,11 @@ describe('Person', function() {
     expect(person2.life_expectancy).toEqual(83);
     expect(person3.age_in_seconds).toEqual(213494400);
     expect(person3.life_expectancy).toEqual(92);
-  })
-})
+  });
+
+  it('should test the mercury_age() method', function() {
+    expect(person1.mercury_age()).toEqual(2416);
+    expect(person2.mercury_age()).toEqual(2702);
+    expect(person3.mercury_age()).toEqual(593);
+  });
+});
