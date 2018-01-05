@@ -44,4 +44,9 @@ export class Person {
     let years = this.age_in_seconds / 60 / 60 / 24 * 0.24;
     return Math.round(years);
   }
+
+  venus_age() {
+    let years = this.age_in_seconds / 60 / 60 / 24 * 0.62;
+    return Math.round(years);
+  }
 }

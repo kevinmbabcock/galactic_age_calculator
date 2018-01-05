@@ -59,6 +59,12 @@ var Person = exports.Person = function () {
       var years = this.age_in_seconds / 60 / 60 / 24 * 0.24;
       return Math.round(years);
     }
+  }, {
+    key: "venus_age",
+    value: function venus_age() {
+      var years = this.age_in_seconds / 60 / 60 / 24 * 0.62;
+      return Math.round(years);
+    }
   }]);
 
   return Person;
