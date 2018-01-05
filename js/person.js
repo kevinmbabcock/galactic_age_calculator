@@ -3,17 +3,25 @@ export class Person {
     this.name = name;
     let user_age = birthdate.split("-");
     let today = current_date.split("-");
-    let years = today[2] - user_age[2];
-    if (today[0] < user_age[0]) {
+    let new_user_age = [];
+    let new_today = [];
+    user_age.forEach(function(self) {
+      new_user_age.push(parseInt(self));
+    })
+    today.forEach(function(self) {
+      new_today.push(parseInt(self));
+    })
+    let years = new_today[2] - new_user_age[2];
+    if (new_today[0] < new_user_age[0]) {
       years -= 1;
-      today[0] += 12;
+      new_today[0] += 12;
     }
-    let months = today[0] - user_age[0];
-    if (today[1] < user_age[1]) {
+    let months = new_today[0] - new_user_age[0];
+    if (new_today[1] < new_user_age[1]) {
       months -= 1;
-      today[1] += 30;
+      new_today[1] += 30;
     }
-    let days = today[1] - user_age[1];
+    let days = new_today[1] - new_user_age[1];
     this.age_in_seconds = ((years * 365 * 24 * 60 * 60) + (months * 30 * 24 * 60 * 60) + (days * 24 * 60 * 60));
     this.gender = gender;
     this.ethnicity = ethnicity;
