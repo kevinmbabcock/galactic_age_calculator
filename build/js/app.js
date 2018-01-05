@@ -71,12 +71,12 @@ var Person = exports.Person = function () {
       var years = this.age_in_seconds / 60 / 60 / 24 * 1.88;
       return Math.round(years);
     }
-
-    // jupiter_age() {
-    //   let years = this.age_in_seconds / 60 / 60 / 24 * 11.86;
-    //   return Math.round(years);
-    // }
-
+  }, {
+    key: "jupiter_age",
+    value: function jupiter_age() {
+      var years = this.age_in_seconds / 60 / 60 / 24 * 11.86;
+      return Math.round(years);
+    }
   }]);
 
   return Person;
@@ -90,6 +90,18 @@ var _person = require("./../js/person.js");
 $(document).ready(function () {
   $("#userInput").submit(function (event) {
     event.preventDefault();
+
+    var name = $("#name").val();
+    var birthdate = $("#birthdate").val();
+    var current_date = $("#current_date").val();
+    var gender = $("input:radio[name=gender]:checked").val();
+    var ethnicity = $("#ethnicity").val();
+
+    var user = new _person.Person(name, birthdate, current_date, gender, ethnicity);
+    console.log(user);
+
+    $("#form").hide();
+    $("#calculations").show();
   });
 });
 

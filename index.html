@@ -2,13 +2,57 @@
 <html>
   <head>
     <link rel="stylesheet" href="build/css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
-    <title></title>
+    <title>Super Galactic Age Calculator</title>
   </head>
   <body>
+    <div class="jumbotron">
+      <h1>Super Galactic Age Calculator</h1>
+    </div>
     <div class="container">
-      
+      <div id="form">
+        <form id="userInput">
+          <div class="form-group">
+            <label for="name">Enter your name:</label>
+            <input id="name" type="text" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="birthdate">Enter your birthdate: (please enter numbers with a '-' separating day-month-year)</label>
+            <input id="birthdate" type="text" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="current_date">Enter todays date: (please enter numbers with a '-' separating day-month-year)</label>
+            <input id="current_date" type="text" class="form-control">
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="gender" value="male">
+              Male
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="gender" value="female">
+              Female
+            </label>
+          </div>
+          <h2>Select your ethnicity:</h2>
+          <select class="form-control" id="ethnicity">
+            <option value="white">White/Caucasian</option>
+            <option value="latino">Hispanic/Latino</option>
+            <option value="african_american">African American</option>
+            <option value="asian_american">Asian American</option>
+            <option value="native_american">Native American</option>
+          </select>
+          <br>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div id="calculations">
+
+      </div>
     </div>
   </body>
 </html>
