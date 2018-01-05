@@ -15,5 +15,11 @@ $(document).ready(function() {
 
     $("#form").hide();
     $("#calculations").show();
+
+    $("#user_name").text(user.name);
+    $("#mercury_age").text(user.mercury_age());
+    $("#venus_age").text(user.venus_age());
+    $("#mars_age").text(user.mars_age());
+    $("#jupiter_age").text(user.mercury_age());
   });
 });
