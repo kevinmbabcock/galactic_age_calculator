@@ -1,6 +1,6 @@
 {
-  "name": "",
-  "description": "",
+  "name": "super_galactic_age_calculator",
+  "description": "calculates users age on different planets in our solar system",
   "main": "gulpfile.js",
   "license": "ISC",
   "homepage": "",

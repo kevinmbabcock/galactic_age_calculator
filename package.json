@@ -1,12 +1,12 @@
 {
-  "name": "",
+  "name": "Super_Galactic_Age_Calculator",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
     "test": "karma start karma.conf.js"
   },
-  "author": "",
+  "author": "Kevin Babcock",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.26.0",
