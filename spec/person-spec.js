@@ -8,7 +8,7 @@ describe('Person', function() {
   beforeEach(function() {
     person1 = new Person("Kevin", "6-2-1990", "1-5-2018", "male", "white");
     person2 = new Person("Brian", "2-28-1987", "1-5-2018", "male", "latino");
-    person3 = new Person("Sharon", "11-17-1995", "1-5-2018", "female", "native_american");
+    person3 = new Person("Wendy", "3-24-2011", "1-5-2018", "female", "asian_american");
   })
 
   it('should create person object with correct age_in_seconds and life_expectancy', function() {
@@ -16,7 +16,7 @@ describe('Person', function() {
     expect(person1.life_expectancy).toEqual(79);
     expect(person2.age_in_seconds).toEqual(972604800);
     expect(person2.life_expectancy).toEqual(83);
-    expect(person3.age_in_seconds).toEqual(382579200);
-    expect(person3.life_expectancy).toEqual(82);
+    expect(person3.age_in_seconds).toEqual(213494400);
+    expect(person3.life_expectancy).toEqual(92);
   })
 })

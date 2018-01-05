@@ -43,7 +43,7 @@ var Person = exports.Person = function Person(name, birthdate, current_date, gen
     this.life_expectancy += 4;
   } else if (this.ethnicity === "latino") {
     this.life_expectancy += 8;
-  } else if (this.ethnicity === "asian-american") {
+  } else if (this.ethnicity === "asian_american") {
     this.life_expectancy += 12;
   } else if (this.ethnicity === "native_american") {
     this.life_expectancy += 2;
