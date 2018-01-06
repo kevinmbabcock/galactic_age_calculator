@@ -65,4 +65,10 @@ export class Person {
     console.log(life);
     return Math.round(life);
   }
+
+  venus_life_expectancy() {
+    let life = this.life_expectancy * 0.62;
+    console.log(life);
+    return Math.round(life);
+  }
 }

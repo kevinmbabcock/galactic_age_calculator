@@ -84,6 +84,13 @@ var Person = exports.Person = function () {
       console.log(life);
       return Math.round(life);
     }
+  }, {
+    key: "venus_life_expectancy",
+    value: function venus_life_expectancy() {
+      var life = this.life_expectancy * 0.62;
+      console.log(life);
+      return Math.round(life);
+    }
   }]);
 
   return Person;
