@@ -56,4 +56,10 @@ describe('Person', function() {
     expect(person3.venus_life_expectancy()).toEqual(57);
   })
 
+  it('should test the mars_life_expectancy() method', function() {
+    expect(person1.mars_life_expectancy()).toEqual(149);
+    expect(person2.mars_life_expectancy()).toEqual(156);
+    expect(person3.mars_life_expectancy()).toEqual(173);
+  })
+
 });

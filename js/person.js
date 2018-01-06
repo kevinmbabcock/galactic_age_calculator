@@ -71,4 +71,10 @@ export class Person {
     console.log(life);
     return Math.round(life);
   }
+
+  mars_life_expectancy() {
+    let life = this.life_expectancy * 1.88;
+    console.log(life);
+    return Math.round(life);
+  }
 }

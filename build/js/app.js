@@ -91,6 +91,13 @@ var Person = exports.Person = function () {
       console.log(life);
       return Math.round(life);
     }
+  }, {
+    key: "mars_life_expectancy",
+    value: function mars_life_expectancy() {
+      var life = this.life_expectancy * 1.88;
+      console.log(life);
+      return Math.round(life);
+    }
   }]);
 
   return Person;
