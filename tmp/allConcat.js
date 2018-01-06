@@ -21,5 +21,10 @@ $(document).ready(function() {
     $("#venus_age").text(user.venus_age());
     $("#mars_age").text(user.mars_age());
     $("#jupiter_age").text(user.mercury_age());
+
+    $("#mercury_life_expectancy").text(user.mercury_life_expectancy());
+    $("#venus_life_expectancy").text(user.venus_life_expectancy());
+    $("#mars_life_expectancy").text(user.mars_life_expectancy());
+    $("#jupiter_life_expectancy").text(user.jupiter_life_expectancy());
   });
 });
