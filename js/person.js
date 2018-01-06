@@ -62,19 +62,21 @@ export class Person {
 
   mercury_life_expectancy() {
     let life = this.life_expectancy * 0.24;
-    console.log(life);
     return Math.round(life);
   }
 
   venus_life_expectancy() {
     let life = this.life_expectancy * 0.62;
-    console.log(life);
     return Math.round(life);
   }
 
   mars_life_expectancy() {
     let life = this.life_expectancy * 1.88;
-    console.log(life);
+    return Math.round(life);
+  }
+
+  jupiter_life_expectancy() {
+    let life = this.life_expectancy * 11.86;
     return Math.round(life);
   }
 }

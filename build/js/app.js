@@ -81,21 +81,24 @@ var Person = exports.Person = function () {
     key: "mercury_life_expectancy",
     value: function mercury_life_expectancy() {
       var life = this.life_expectancy * 0.24;
-      console.log(life);
       return Math.round(life);
     }
   }, {
     key: "venus_life_expectancy",
     value: function venus_life_expectancy() {
       var life = this.life_expectancy * 0.62;
-      console.log(life);
       return Math.round(life);
     }
   }, {
     key: "mars_life_expectancy",
     value: function mars_life_expectancy() {
       var life = this.life_expectancy * 1.88;
-      console.log(life);
+      return Math.round(life);
+    }
+  }, {
+    key: "jupiter_life_expectancy",
+    value: function jupiter_life_expectancy() {
+      var life = this.life_expectancy * 11.86;
       return Math.round(life);
     }
   }]);
