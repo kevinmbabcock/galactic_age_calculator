@@ -43,5 +43,11 @@ describe('Person', function() {
     expect(person2.jupiter_age()).toEqual(133508);
     expect(person3.jupiter_age()).toEqual(29306);
   })
-  
+
+  it('should test the mercury_life_expectancy() method', function() {
+    expect(person1.mercury_life_expectancy()).toEqual(19);
+    expect(person2.mercury_life_expectancy()).toEqual(20);
+    expect(person3.mercury_life_expectancy()).toEqual(22);
+  })
+
 });

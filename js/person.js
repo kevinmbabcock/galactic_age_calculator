@@ -61,6 +61,8 @@ export class Person {
   }
 
   mercury_life_expectancy() {
-    let earth_life = this.life_expectancy * this.age;
+    let life = this.life_expectancy * 0.24;
+    console.log(life);
+    return Math.round(life);
   }
 }

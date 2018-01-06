@@ -23,8 +23,8 @@ $(document).ready(function() {
     $("#jupiter_age").text(user.mercury_age());
 
     $("#mercury_life_expectancy").text(user.mercury_life_expectancy());
-    $("#venus_life_expectancy").text(user.venus_life_expectancy());
-    $("#mars_life_expectancy").text(user.mars_life_expectancy());
-    $("#jupiter_life_expectancy").text(user.jupiter_life_expectancy());
+    // $("#venus_life_expectancy").text(user.venus_life_expectancy());
+    // $("#mars_life_expectancy").text(user.mars_life_expectancy());
+    // $("#jupiter_life_expectancy").text(user.jupiter_life_expectancy());
   });
 });
